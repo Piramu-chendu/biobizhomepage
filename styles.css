@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #3498db;  /* Vibrant Blue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #9ff7a8;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #28843a; /* Yellow hover effect */
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section (Background & Image) */
+.hero {
+    background: linear-gradient(135deg, #2980b9, #8e44ad); /* Gradient background */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+/* Card Layouts */
+section.py-5 .container.d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.py-5 .container.d-flex .card {
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+section.py-5 .container.d-flex .card img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+section.py-5 .container.d-flex .card img:hover {
+    transform: scale(1.1);
+}
+
+/* Three Cards in Row */
+section.py-5 .row .col-md-4 {
+    margin-bottom: 30px;
+}
+
+section.py-5 .row .col-md-4 .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.py-5 .row .col-md-4 .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* Social Media Icons */
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    section.py-5 .container.d-flex .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section.py-5 .row .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer .social-icons {
+        text-align: center;
+    }
+}
+/* Ensure images fit properly in the carousel */
+#imageCarousel .carousel-item img {
+    height: 300px;  /* Adjust this height based on your design */
+    object-fit: cover;
+}
+
+/* Optional: Add smooth transitions */
+.carousel-inner {
+    transition: transform 0.5s ease;
+    
+}
+.card-body{
+    background-color: #8fe1b1;
+}
